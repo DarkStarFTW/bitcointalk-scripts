@@ -9,7 +9,8 @@
 
 (() => {
   document.querySelectorAll("a[href^='https://bitcointalk.org/']").forEach(a => {
-      if (! /;dt/.test (a)&& a != "https://bitcointalk.org/index.php"
+      if (! /;dt/.test (a)
+          && a != "https://bitcointalk.org/index.php"
           && a != "https://bitcointalk.org/"
           && ! /action=search/.test (a)
           && ! /more\.php/.test (a)

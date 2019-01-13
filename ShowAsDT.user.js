@@ -2,6 +2,7 @@
 // @name     DT Redirect
 // @description Redirect Bitcointalk URLs to Show as DT
 // @version  0.1
+// @author DarkStar_
 // @match       https://*.bitcointalk.org/*
 // @run-at      document-start
 // @grant       none

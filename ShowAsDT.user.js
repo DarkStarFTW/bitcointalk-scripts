@@ -20,4 +20,15 @@
           a.href += ";dt";
       }
   });
+  document.querySelectorAll("a[href^='/index.php']").forEach(a => {
+      if (! /;dt/.test (a)
+          && a != "/index.php"
+          && ! /action=search/.test (a)
+          && ! /more\.php/.test (a)
+          && ! /donate.html/.test (a)
+          && ! /#new/.test (a)
+          && ! /#msg/.test (a)){
+          a.href += ";dt";
+      }
+  });
 })();

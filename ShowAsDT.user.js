@@ -15,7 +15,9 @@ if (! /;dt/.test (window.location.href)
     && ! /action=search/.test (window.location.href)
     && ! /more\.php/.test (window.location.href)
     && ! /donate.html/.test (window.location.href)
+    && ! /#new/.test (window.location.href)
+    && ! /#msg/.test (window.location.href)
    ) {
-	var newURL  = window.location.href + ";dt";
+	var newURL = window.location.href + ";dt";
 	window.location.replace (newURL);
 }

@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name     DT Redirect
 // @description Redirect Bitcointalk URLs to Show as DT
-// @version  0.2.2
+// @version  0.2
 // @author DarkStar_
 // @include       https://bitcointalk.org/*
 // @grant       none
@@ -21,9 +21,9 @@
       }
   });
   if (window.location.host === "bitcointalk.org") {
-      document.querySelectorAll("a[href^='index.php']").forEach(a => {
+      document.querySelectorAll("a[href^='/index.php']").forEach(a => {
           if (! /;dt/.test (a)
-              && a != "index.php"
+              && a != "/index.php"
               && ! /action=search/.test (a)
               && ! /more\.php/.test (a)
               && ! /donate.html/.test (a)

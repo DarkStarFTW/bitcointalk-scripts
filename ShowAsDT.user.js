@@ -22,7 +22,7 @@
   });
   document.querySelectorAll("a[href^='/index.php']").forEach(a => {
       if (! /;dt/.test (a)
-          && a != "/index.php"
+          && a != "index.php"
           && ! /action=search/.test (a)
           && ! /more\.php/.test (a)
           && ! /donate.html/.test (a)
